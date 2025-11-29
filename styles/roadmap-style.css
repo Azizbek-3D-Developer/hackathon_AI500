@@ -1,0 +1,94 @@
+/* MAIN CONTENT must allow positioned canvas */
+.main-content {
+    position: relative;       /* canvas bound to main container */
+    overflow: hidden;         /* prevents canvas overflow */
+}
+
+/* CANVAS BACKGROUND ------------------------------------------- */
+#bg-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ROADMAP TITLE ------------------------------------------------ */
+.roadmap-title {
+    text-align: center;
+    color: #39ff14;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 2; /* keep above canvas */
+}
+
+/* WRAPPER ------------------------------------------------------ */
+.roadmap-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* CARD --------------------------------------------------------- */
+.roadmap-card {
+    position: relative;
+    background: #181818;
+    border-radius: 12px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    border: 2px solid #39ff14;
+    box-shadow: 0 0 14px rgba(57,255,20,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+    will-change: transform, box-shadow;
+}
+
+/* HOVER GLOW PULSE -------------------------------------------- */
+.roadmap-card:hover {
+    box-shadow: 0 0 28px rgba(57,255,20,0.6), 0 0 50px rgba(57,255,20,0.2);
+}
+
+/* CARD DATE ---------------------------------------------------- */
+.roadmap-date {
+    color: #39ff14;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* CARD CONTENT ------------------------------------------------- */
+.roadmap-details {
+    color: #cfcfcf;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+/* CONNECTION LINES BETWEEN CARDS ------------------------------ */
+.card-connection-line {
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    background: #39ff14;
+    box-shadow: 0 0 10px #39ff14;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* MOBILE ------------------------------------------------------- */
+@media (max-width: 600px) {
+    .roadmap-card {
+        padding: 20px 22px;
+    }
+
+    .roadmap-date {
+        font-size: 1.15rem;
+    }
+}
