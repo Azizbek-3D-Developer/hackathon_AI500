@@ -6,12 +6,14 @@
     <title>Team Members | DeepThinkers</title>
 
     <link rel="stylesheet" href="../styles/base-style.css">
+    <link rel="stylesheet" href="../styles/solution-style.css">
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
     <nav class="nav-bar">
+        <img src="../images/logo.png" alt="DeepThinkers Logo" class="site-logo">
         <a href="../index.html">Home</a>
         <a href="problem.html">Problem</a>
         <a href="solution.html">Solution</a>
@@ -21,13 +23,26 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
+         <h1 class="solution-title">Our Solution</h1>
 
+        <p>Here we demonstrated how DeepThinkers solves the problem...</p>
+
+        <div id="pdf-loader" class="loader-container">
+            <div class="spinner"></div>
+            <p>Loading PDF...</p>
+        </div>
+
+        <iframe id="pdf-viewer" 
+                src="../images/HosilBor.pdf"
+                style="width:100%; height:800px; border:none; display:none;">
+        </iframe>
+        <a href="https://hosilbor.netlify.app/" class="Webpage-btn" target="_blank">See demo</a>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer-section">
         <p>© 2025 DeepThinkers | AI500 Hackathon</p>
     </footer>
-
+    <script src="../scripts/solution-script.js"></script>
 </body>
 </html>

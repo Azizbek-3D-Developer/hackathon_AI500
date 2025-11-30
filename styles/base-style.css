@@ -62,3 +62,8 @@ body {
     color: #39ff14;
     margin-top: auto;
 }
+
+.site-logo {
+    height: 60px;
+    margin-right: 25px;
+}
