@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team Members | DeepThinkers</title>
+
+    <link rel="stylesheet" href="../styles/base-style.css">
+    <link rel="stylesheet" href="../styles/demo-style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-bar">
+        <img src="../images/logo.png" alt="DeepThinkers Logo" class="site-logo">
+        <a href="../index.html">Home</a>
+        <a href="problem.html">Problem</a>
+        <a href="solution.html">Solution</a>
+        <a href="members.html">Team Members</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="demo.html">Demo</a>
+    </nav>
+
+    
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        
+        <h1 class="demo-title">Project Demo Videos</h1>
+        <p class="demo-subtitle">Choose your language to watch the full demo</p>
+
+        <div class="demo-carousel">
+
+            <!-- CARD 1 -->
+            <div class="demo-card" data-video="../video/hosilbor-uzbek.mp4" 
+            data-desc="English Demo: A quick walkthrough of Hosilbor showing how users browse products, 
+            navigate the marketplace, and see how farmers and buyers connect. It highlights the basic 
+            listing workflow and how the platform makes agricultural trading simpler and more organized.">
+                <h3>English Demo</h3>
+                <iframe src="https://drive.google.com/file/d/1DplciopTiiHQ7YQbZvO4umeLIoPT1er7/preview" loading="lazy" allowfullscreen></iframe>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="demo-card" data-video="../video/hosilbor-uzbek.mp4" 
+            data-desc="Русская демоверсия: Короткое знакомство с Hosilbor. Видео показывает, как 
+            просматривать товары, ориентироваться на площадке и понимать взаимодействие фермеров и 
+            покупателей. Показан простой процесс работы с объявлениями и то, как платформа делает 
+            торговлю удобнее.">
+                <h3>Russian Demo</h3>
+                <iframe src="https://drive.google.com/file/d/1DplciopTiiHQ7YQbZvO4umeLIoPT1er7/preview" loading="lazy" allowfullscreen></iframe>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="demo-card" data-video="../video/hosilbor-uzbek.mp4" 
+            data-desc="O‘zbekcha demo: Ushbu video Hosilbor’dan qanday foydalanishni ko‘rsatadi — 
+            mahsulotlarni ko‘rish, sahifalarda harakatlanish va fermerlar bilan xaridorlarning qanday 
+            bog‘lanishi. E’lonlarni ko‘rish jarayoni va platformaning savdoni qanday soddalashtirishi 
+            tushuntiriladi.">
+                <h3>Uzbek Demo</h3>
+                <iframe src="https://drive.google.com/file/d/1DplciopTiiHQ7YQbZvO4umeLIoPT1er7/preview" loading="lazy" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- FULLSCREEN MODAL -->
+    <div id="video-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modal-close">&times;</span>
+
+            <iframe id="modal-video" allowfullscreen></iframe>
+
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+
+    <a href="https://hosilbor-hackaton.onrender.com/" target="_blank" class="app-link">Application</a>
+    <div class="description-card">
+
+        <h2>Project Description</h2>
+
+        <section>
+            <h3>1. What is being shown</h3>
+            <p>
+                This demo shows a working prototype of <strong>Hosilbor</strong>, a web-based platform where farmers and customers 
+                can trade agricultural products in one unified place. The video walks through the main user flows: navigating the 
+                marketplace, viewing available products, and understanding how farmers can publish their goods while customers 
+                browse and order them.
+            </p>
+        </section>
+
+        <section>
+            <h3>2. How it relates to the problem and our solution</h3>
+            <p>
+                The core problem addressed is the lack of a direct, efficient, and transparent marketplace connecting farmers with buyers.
+                Farmers often struggle to find buyers quickly, leading to financial losses and food waste, while customers face inconsistent 
+                pricing and limited access to fresh products.
+            </p>
+
+            <p>Our solution provides:</p>
+            <ul>
+                <li>A centralized online marketplace</li>
+                <li>Direct communication between farmers and customers</li>
+                <li>Transparent product listings</li>
+                <li>Faster distribution and reduced spoilage</li>
+                <li>A scalable digital system for regional agricultural trade</li>
+            </ul>
+
+            <p>The demo demonstrates how these problems are solved through a simple, intuitive, and accessible web interface.</p>
+        </section>
+
+        <section>
+            <h3>3. Stack, technologies, and AI used</h3>
+            <p>Our team built the main application using:</p>
+            <ul>
+                <li><strong>React.js</strong> – UI & component structure</li>
+                <li><strong>Node.js / Express</strong> – backend logic and API</li>
+                <li><strong>Gemini AI</strong> – powering features such as:</li>
+                <ul class="inner-ul">
+                    <li>Smart product recommendations</li>
+                    <li>Assistive queries for buyers and farmers</li>
+                </ul>
+            </ul>
+
+            <p>The /demo presentation website is built with:</p>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Custom neon-dark theme</li>
+                <li>Responsive layout and demo viewer</li>
+            </ul>
+
+            <p>This dedicated page serves as a standalone showcase of our hackathon project.</p>
+        </section>
+
+        <section>
+            <h3>4. Roadmap stage and next steps</h3>
+            <p>According to our 10-day roadmap, the project is currently at the <strong>MVP stage</strong>:</p>
+
+            <ul>
+                <li>Core marketplace logic implemented</li>
+                <li>UI built</li>
+                <li>Backend integrated</li>
+                <li>Basic matching logic functional</li>
+                <li>Demo-ready deployment completed</li>
+            </ul>
+
+            <p>Next steps:</p>
+            <ul>
+                <li>Add user authentication and secure profiles</li>
+                <li>AI-powered demand forecasting</li>
+                <li>Real-time order tracking</li>
+                <li>Expand agricultural product categories</li>
+                <li>Mobile-friendly interface</li>
+                <li>Performance & scalability improvements</li>
+            </ul>
+        </section>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <p>© 2025 DeepThinkers | AI500 Hackathon</p>
+    </footer>
+
+    <script src="../scripts/demo-script.js"></script>
+</body>
+</html>
