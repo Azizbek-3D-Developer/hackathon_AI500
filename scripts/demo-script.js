@@ -6,7 +6,8 @@ const closeBtn = document.getElementById("modal-close");
 
 cards.forEach(card => {
     card.addEventListener("click", () => {
-        modalVideo.src = card.dataset.video;
+        const iframe = card.querySelector('iframe');
+        modalVideo.src = iframe.src;
         modalDesc.textContent = card.dataset.desc;
         modal.classList.remove("hidden");
     });
@@ -23,3 +24,4 @@ modal.addEventListener("click", (e) => {
         modalVideo.src = "";
     }
 });
+
